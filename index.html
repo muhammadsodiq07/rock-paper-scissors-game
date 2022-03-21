@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson</title>
+    <title>Game</title>
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
@@ -16,8 +16,63 @@
     />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
-
   <body>
+
+    <section class="main-section">
+      <h1 class="title">Rock  paper  scissors</h1>
+      <div class="tablet">
+        <div class="tablet-absolut">
+          <div class="your-score">
+            <p class="your-text">Your SCORE</p>
+            <button class="your-btn btn">
+              0
+            </button>
+        </div>
+        <div class="computer-score">
+          <p class="com-text">Com SCORE</p>
+            <button class="com-btn btn">
+              0</button>
+        </div>
+        </div>
+      </div>
+    
+      <div class="hands">
+        <div>
+          <img class="imgback" src="images/Path.svg" alt="">
+        </div>
+        <div  class="gamediv">
+          <div class="paper">
+            <img class="img" onclick="userHand('paper')" src="images/paper.svg" alt="">
+          </div>
+          <div class="rock">
+            <img class="img"onclick="userHand('rock')" src="images/rock.svg" alt="">
+          </div>
+        </div>
+          <div class="scissors">
+            <img class="img" onclick="userHand('scissors')" src="images/scissors.svg" alt="">
+          </div>
+      </div>
+      <div class="contest">
+        <div class="userhand">
+          <h1 class="">You Picked</h1>
+          <div class="handImg">
+            <img class="hand-img" id="papers" src="images/paper.svg" alt="">
+          </div>
+        </div>
+        <div class="referee">
+          <div class="decision"><h1>You Win</h1></div>
+          <div class="newGame" onclick="restarGame()">Play Again</div>
+        </div>
+        <div class="comHand">
+          <h1>The House Picked</h1>
+          <div class="handimgcom">
+            <img class="comimges" id="comId" src="images/rock.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <script src="js/main.js"></script>
   </body>
 </html>
