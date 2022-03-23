@@ -23,7 +23,7 @@ const userHand = (hand) => {
   let comHand = pickComputerHand();
   referee(hand, comHand)
 }
-
+  
 const pickComputerHand = () => {
   let hands = ["rock","paper","scissors"]
   let comHand = hands[Math.floor(Math.random() * 3)]
